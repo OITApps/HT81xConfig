@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!--  Grandstream XML Provisioning Configuration  -->
+<gs_provision version="1">
+<config version="1">
+<!--  Configuration template for HT81x firmware version 1.0.21.4  -->
+<!-- ensure the following are set in your defaults
+P2="secure web password"
+P133="0 fixed buffer, 1 adaptive" 
+P231="Device Mode. 0 -NAT Router, 1 - Bridge"
+P824="disable LEC"
+P192="firmware path without protocol"
+P193="automatic upgrade timer in seconds"
+P237="provisioning url without protocol"
+P1650="web access mode  0 - HTTPS, 1 - HTTP, 2 - Disabled"
+-->
+<P2>[[P2]]</P2> <!-- password -->
+<P47>[[domain]]</P47>
+<P48>[[outboundproxy_1]]</P48>
+<P103>1</P103> <!-- SRV mode -->
+<P29095>1</P29095> <!-- use registered node -->
+<P32>1</P32> <!-- one minute reg cycle-->
+<P2330>5</P2330> <!-- register 5 sec before end -->
+<P2397>0</P2397> <!-- disable options -->
+<P40>[[dynamicPort]]</P40> <!-- unique sip port assignment, helps with nat -->
+<P4340>1</P4340> <!-- validated invites -->
+<P99>1</P99> <!-- MWI subscribe -->
+<P291>1</P291> <!-- Symmetric RTP -->
+<P228>0</P228> <!-- fax mode auto detect is 0 -->
+<P1650>[[P1650]]</P1650> <!-- web access mode  0 - HTTPS, 1 - HTTP, 2 - Disabled.-->
+<P276>1</P276> <!-- disable SSH -->
+<P231>[[P231]]</P231> <!-- Device Mode. 0 -NAT Router, 1 - Bridge -->
+<P28158>1</P28158> <!-- Disable User Level Web Access -->
+<P28159>1</P28159> <!-- Disable Viewer Level Web Access -->
+<P212>2</P212> <!-- prov protocol 1 http 2 https -->
+<P192>[[P192]]</P192> <!-- firmware path -->
+<P237>[[P237]]</P237> <!-- provisioning path -->
+<P193>[[P193]]</P193> <!-- automatic upgrade timer -->
+<P1360>[[auth_user]]</P1360>
+<P1361>[[auth_pass]]</P1361>
+<P145>0</P145> <!-- allow dhcp override -->
+<P22296>3</P22296> <!-- weekly auto upgrade -->
+<P286>0</P286> <!-- sunday auto upgrade -->
+<P8458>1</P8458><!-- randomize auto upgrade -->
+<P4428>1</P4428><!-- disable sip notify auth -->
+<P30>us.pool.ntp.org</P30>
+<!--  FXS Ports  -->
+<!--  FXS Port 1  -->
+<P4060>[[device_1]]</P4060> <!-- SIP User ID -->
+<P4090>[[device_1]]</P4090> <!-- Authenticate ID -->
+<P4120>[[device_pass_1]]</P4120> <!-- Password -->
+<P4180>[[name_1]]</P4180>
+<P4150>0</P4150> <!-- profile ID -->
+<P4300>0</P4300> <!-- hunting group -->
+<P4595>1</P4595> <!-- enable port -->
+<P4416>1</P4416> <!--Re-INVITE After Fax Tone Detected-->
+<P133>[[P133]]</P133> <!-- 0 fixed buffer, 1 adaptive -->
+<P824>[[P824]]</P824> <!-- disable LEC -->
+<!--  FXS Port 2  -->
+<P4061>[[device_2]]</P4061> <!-- SIP User ID -->
+<P4091>[[device_2]]</P4091> <!-- Authenticate ID -->
+<P4121>[[device_pass_2]]</P4121> <!-- Password -->
+<P4181>[[name_2]]</P4181>
+<P4151>0</P4151> <!-- profile ID -->
+<P4301>0</P4301>  <!-- hunting group -->
+<P4596>1</P4596> <!-- enable port -->
+<!--  FXS Port 3  -->
+<P4062>[[device_3]]</P4062> <!-- SIP User ID -->
+<P4091>[[device_3]]</P4091> <!-- Authenticate ID -->
+<P4122>[[device_pass_3]]</P4122> <!-- Password -->
+<P4182 >[[name_3]]</P4182 > <!-- Name -->
+<P4152>0</P4152> <!-- profile ID -->
+<P4302>0</P4302>  <!-- hunting group -->
+<P4597>1</P4597> <!-- enable port -->
+<!--  FXS Port 4  -->
+<P4063>[[device_3]]</P4063> <!-- SIP User ID -->
+<P4093>[[device_3]]</P4093> <!-- Authenticate ID -->
+<P4123>[[device_pass_3]]</P4123> <!-- Password -->
+<P4183 >[[name_3]]</P4183 > <!-- Name -->
+<P4153>0</P4153> <!-- profile ID -->
+<P4303>0</P4303>  <!-- hunting group -->
+<P4598>1</P4598> <!-- enable port -->
+</config>
+</gs_provision>
+
