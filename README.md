@@ -32,7 +32,7 @@ P1650="web access mode  0 - HTTPS, 1 - HTTP, 2 - Disabled"
 4. Model: HT-812
 5. Type: Device
 6. NDP Code Structure:  Grandstream HT-81x
-7. # of Phone Lines: 2
+7. Number of Phone Lines: 2
 8. Resync Enabled: yes
 9. Show in portal: yes
 10. Overrides:  Add overrides from previous section
